@@ -2,9 +2,9 @@ import ArgumentParser
 import Foundation
 
 
-struct IndexStoreDBCLI: ParsableCommand {
+struct IndexstoreDbCli: ParsableCommand {
     static var configuration = CommandConfiguration(
-        abstract: "A utility for indexstore_db_cli.",
+        abstract: "A simple cli tool for indexstore-db.",
         subcommands: [GenerateDB.self, GetUsr.self, FindReference.self, FindDefinition.self])
 
     init() { }
@@ -121,4 +121,4 @@ struct FindDefinition: ParsableCommand {
 }
 
 
-IndexStoreDBCLI.main()
+IndexstoreDbCli.main()
